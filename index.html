@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Vegan Diet | Home</title>
+        <link rel="stylesheet" href="index_styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header id="navbar">
+            <h1 id="resto_name"><a href="index.html">The Vegan Diet</a></h1>
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="welcome-container">
+            <img src="welcome.png" alt="Welcome to the Vegan Diet. Why choose between healthy and delicious when you can have both?" id="welcome">
+        </div>
+        <header id="featured">
+            <h1>Featured</h1>
+        </header>
+        <div class="float-container">
+            <div class="float-child">
+              <div class="slider">
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <div class="slide first">
+                    <img src="lentil_bolognese.jpg" alt="Lentil Bolognese">
+                  </div>
+                  <div class="slide">
+                    <img src="risotto.jpg" alt="Butternut Squash Risotto with Leeks and Spinach">
+                  </div>
+                  <div class="slide">
+                    <img src="coconut_rice.jpg" alt="Coconut Rice Bowl">
+                  </div>
+                  <div class="slide">
+                    <img src="coconut_millet.jpg" alt="Coconut Millet Bowl with Kabocha Squash">
+                  </div>
+                </div>
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                </div>
+              </div>          
+            </div>
+            <div class="float-child">
+              <video width="394" height="600" autoplay muted loop>
+                <source src="featured.mp4">
+                <source src="https://www.canva.com/design/DAFYlrspJLU/sjIZoMXxRGLHjygilB-zyw/watch?utm_content=DAFYlrspJLU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+              </video>
+            </div>
+          </div>
+        <footer>
+          <h2><a href="index.html">The Vegan Diet</a></h2>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li>&nbsp;&nbsp;</li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </footer>
+        <script>
+          var counter = 1;
+          setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+              counter = 1;
+            }
+          }, 5000);
+          </script>
+    </body>
+</html>
